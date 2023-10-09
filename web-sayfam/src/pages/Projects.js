@@ -1,4 +1,5 @@
 import line from "../Assets/Vector 2.png";
+import ProjectsCards from "../components/ProjectsCards";
 
 export default function Projects() {
   return (
@@ -7,7 +8,8 @@ export default function Projects() {
       <h2 className="dark:text-[#AEBCCF] font-semibold text-5xl py-6 ">
         Projects
       </h2>
-      <div className="flex">
+      <ProjectsCards />
+      {/* <div className="flex">
         <div>
           <h6 className="font-medium text-3xl dark:text-[#B7AAFF] pb-6">
             JavaScript
@@ -35,7 +37,7 @@ export default function Projects() {
             officia deserunt mollit anim id est laborum.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
