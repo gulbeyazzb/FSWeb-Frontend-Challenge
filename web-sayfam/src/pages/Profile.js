@@ -1,6 +1,6 @@
 import line from "../Assets/Vector 2.png";
 
-export default function Hero() {
+export default function Profile() {
   return (
     <div className="my-4">
       <img src={line}></img>

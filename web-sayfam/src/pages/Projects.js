@@ -1,8 +1,11 @@
-export default function Skills() {
+import line from "../Assets/Vector 2.png";
+
+export default function Projects() {
   return (
     <div className="my-10">
+      <img src={line}></img>
       <h2 className="dark:text-[#AEBCCF] font-semibold text-5xl py-6 ">
-        Skills
+        Projects
       </h2>
       <div className="flex">
         <div>
