@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="my-10">
       <img src={line}></img>
-      <h2 className="dark:text-[#AEBCCF] font-semibold text-5xl py-6 ">
+      <h2 className="dark:text-[#AEBCCF] text-[#1F2937] font-semibold text-5xl py-6 ">
         Projects
       </h2>
       <ProjectsCards />
