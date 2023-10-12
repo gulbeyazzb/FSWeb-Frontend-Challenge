@@ -1,10 +1,12 @@
 import { useState } from "react";
-import ellipse from "../Assets/Ellipse 1.png";
-import rectangle from "../Assets/Rectangle 1.png";
 
 export default function Mode() {
+  const [toggle, setToggle] = useState(false);
   const [dark, setDark] = useState(true);
+  const toggleClass = " transform  translate-x-5";
+
   const changeDarkMode = () => {
+    setToggle(!toggle);
     document.documentElement.classList.toggle("dark");
     setDark(!dark);
   };
@@ -20,14 +22,32 @@ export default function Mode() {
         'ye Geç
       </button>
       <span className="float-right text-[#777777]">|</span>
-      <button
-        className="relative flex items-center float-right pe-3 text-[#777777] dark:text-[#D9D9D9] font-bold text-base"
-        onClick={changeDarkMode}
-      >
-        <img className="relative me-1 h-[20px]" src={rectangle}></img>{" "}
-        <img className="absolute left-7 h-[15px]" src={ellipse}></img>{" "}
-        {dark ? "DarkMode" : "LightMode"}
-      </button>
+      <div className=" flex items-center gap-3 float-right pe-3 text-[#777777] dark:text-[#D9D9D9] font-bold text-base">
+        <div className="flex flex-col justify-center items-center ">
+          <div
+            className="md:w-14 md:h-7 w-12 h-6 flex items-center dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full p-1 cursor-pointer duration-700 ease-in-out "
+            onClick={changeDarkMode}
+          >
+            {!dark && (
+              <i
+                class={
+                  "bx bxs-moon text-[#FFE86E]  md:w-6 md:h-6 text-2xl pb-8 shadow-md transform  duration-700 ease-in-out " +
+                  (toggle ? null : toggleClass)
+                }
+              ></i>
+            )}
+            {dark && (
+              <i
+                class={
+                  " bx bxs-sun text-[#FFE86E]  md:w-6 md:h-6 text-2xl pb-8  transform  duration-700 ease-in-out " +
+                  (toggle ? null : toggleClass)
+                }
+              ></i>
+            )}
+          </div>
+        </div>
+        {dark ? "DarkMode'a Geç" : "LightMode'a Geç"}
+      </div>
     </div>
   );
 }
