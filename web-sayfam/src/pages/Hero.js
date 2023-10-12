@@ -23,20 +23,15 @@ export default function Hero() {
         user experiences. Let’s shake hands with me.
       </p>
       <div className="flex gap-2 items-center">
-        <button className="bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-xs font-medium py-3 px-8  rounded-md w-[131px] h-12">
+        <button className="bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium py-3 px-8  rounded-md h-12">
           Hire Me
         </button>
-        <button className="flex items-center gap-2 text-[#3730A3] dark:bg-[#383838] dark:text-[#E1E1FF] text-xs font-medium py-3 px-8  rounded-md w-[131px] h-12">
-          <box-icon
-            name="github"
-            type="logo"
-            className="text-[#a6a3c6]"
-            color="#3730a3"
-          ></box-icon>
-          <i className="bx bx-github" />
+        <button className="border-solid border border-[#3730A3] flex items-center gap-2 text-[#3730A3] dark:bg-[#383838] dark:text-[#E1E1FF] w-[131px] dark:border-[#E1E1FF] text-lg font-medium  rounded-md  py-4 pl-4 h-12">
+          <i class="bx bxl-github text-[#3730A3] dark:text-[#E1E1FF] text-2xl"></i>
+          Github
         </button>
-        <button className=" flex items-center gap-2 text-[#3730A3] dark:bg-[#383838] dark:text-[#E1E1FF] text-xs font-medium py-3 px-8  rounded-md w-[131px] h-12">
-          <img src={Linkedin}></img>
+        <button className="border-solid border border-[#3730A3] flex items-center gap-2 text-[#3730A3] dark:bg-[#383838] dark:text-[#E1E1FF] w-[131px] dark:border-[#E1E1FF] text-lg font-medium py-4 pl-4 rounded-md  h-12">
+          <i class="bx bxl-linkedin text-[#3730A3] dark:text-[#E1E1FF] text-2xl"></i>{" "}
           Linkedin
         </button>
       </div>
