@@ -10,11 +10,10 @@ import { useState } from "react";
 
 const ProjectsCards = () => {
   const [showModal, setShowModal] = useState(false);
-  const showNextImage = () => {};
   return (
-    <div className="flex container m-auto gap-6 items-center justify-between">
+    <div className="flex container gap-2 m-auto items-center justify-between">
       {Data.map((data) => (
-        <Card className="mt-6 w-80 py-10 pt-12 ">
+        <Card className="mt-6 w-[340px] m-auto py-10 pt-12 ">
           <CardHeader className="relative ">
             <button onClick={() => setShowModal(true)}>
               <img src={data.image} alt="card-image" />
