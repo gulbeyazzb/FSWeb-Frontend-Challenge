@@ -11,7 +11,7 @@ import { useState } from "react";
 const ProjectsCards = () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <div className="flex container gap-2 m-auto items-center justify-between">
+    <div className="flex md:flex-row flex-col container gap-2 m-auto items-center justify-between">
       {Data.map((data) => (
         <Card className="mt-6 w-[340px] m-auto py-10 pt-12 ">
           <CardHeader className="relative ">
@@ -53,7 +53,7 @@ const ProjectsCards = () => {
               </p>
             ))}
           </CardFooter>
-          <div className="flex justify-between px-8  text-[#3730A3] underline">
+          <div className="hidden md:flex justify-between px-8  text-[#3730A3] underline">
             <a href="https://github.com/gulbeyazzb" target="_blank">
               Github
             </a>
