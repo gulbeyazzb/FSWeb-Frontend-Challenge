@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Mode() {
   const [toggle, setToggle] = useState(false);
   const [dark, setDark] = useState(true);
-  const toggleClass = " transform  translate-x-5";
+  const toggleClass = " transform  translate-x-6";
 
   const changeDarkMode = () => {
     setToggle(!toggle);
