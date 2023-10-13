@@ -4,8 +4,8 @@ import Main from "./layouts/Main";
 
 function App() {
   return (
-    <div>
-      <div className=" flex flex-col pt-6 px-20 dark:bg-[#252128] h-full">
+    <div className="dark:bg-[#252128]">
+      <div className=" flex flex-col pt-6 px-20  h-full w-[1200px] m-auto">
         <Main />
       </div>
 
