@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Footer() {
   return (
-    <div className="dark:bg-[#141414] m-auto p-[5.5rem]  ">
+    <div className="dark:bg-[#141414] m-auto p-[5.5rem] bg-[#F9F9F9] ">
       <h1 className="dark:text-[#AEBCCF] font-semibold text-[#1F2937] text-[42px] pb-6 mb-6 w-[500px]">
         Let’s work together on your next product.
       </h1>
