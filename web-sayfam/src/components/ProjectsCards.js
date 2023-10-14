@@ -5,7 +5,7 @@ import {
   CardFooter,
   Typography,
 } from "@material-tailwind/react";
-import { Data } from "../mocks/Data";
+import { Data } from "../mocks/ProjectsData";
 import { useState } from "react";
 
 const ProjectsCards = () => {
@@ -54,13 +54,10 @@ const ProjectsCards = () => {
             ))}
           </CardFooter>
           <div className="hidden md:flex justify-between px-8  text-[#3730A3] underline">
-            <a href="https://github.com/gulbeyazzb" target="_blank">
+            <a href={data.github} target="_blank">
               Github
             </a>
-            <a
-              href="https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/"
-              target="_blank"
-            >
+            <a href={data.website} target="_blank">
               Website
             </a>
           </div>
