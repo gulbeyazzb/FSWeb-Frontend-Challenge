@@ -1,9 +1,9 @@
 import line from "../Assets/Line 11.png";
 import mePhoto from "../Assets/9C6BB119-4D9F-45F0-B1FD-9E332E9EF7BA-35928-0000062DD430959D (1).jpg";
-import github from "../Assets/github.png";
-import Linkedin from "../Assets/LinkedIn.png";
+import { Data } from "../mocks/HeroData";
 
 export default function Hero() {
+  console.log(Data.name);
   return (
     <div>
       <div>
@@ -15,12 +15,12 @@ export default function Hero() {
         <div className="flex justify-center md:justify-start md:items-center md:gap-2 pb-6">
           <img src={line} className="hidden md:inline-block"></img>
           <p className="text-navy-blue-600 dark:text-navy-blue-100 font-medium text-xl ">
-            Gülbeyaz BAYRAM ÖZER
-            <p className="text-center">Full Stack Developer</p>
+            {Data.name}
+            <p className="text-center">{Data.role}</p>
           </p>
         </div>
         <h2 className="dark:text-[#AEBCCF] text-[#1F2937] md:font-bold md:text-7xl text-xl font-bold md:pb-6 ">
-          Creative thinker Minimalism lover
+          {Data.about}
         </h2>
         <p className="dark:text-white text-[#6B7280] font-normal text-lg md:w-[553px]  pb-6">
           Hi, I’m Almila. I’m a full-stack developer. If you are looking for a
