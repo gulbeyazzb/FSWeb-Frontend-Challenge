@@ -26,7 +26,7 @@ export default function Mode() {
       </span>
       <div className="flex items-center md:gap-3 float-right pe-3 text-[#777777] dark:text-[#D9D9D9] font-bold text-base">
         <div className="flex flex-col justify-center items-center ">
-          <div
+          <button
             className="md:w-14 md:h-7 w-12 h-6 flex items-center dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full sm:p-1 cursor-pointer duration-700 ease-in-out "
             onClick={changeDarkMode}
           >
@@ -46,7 +46,7 @@ export default function Mode() {
                 }
               ></i>
             )}
-          </div>
+          </button>
         </div>
         {dark ? "DarkMode'a Geç" : "LightMode'a Geç"}
       </div>
