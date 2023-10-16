@@ -1,4 +1,4 @@
-export const Data = {
+export const TrHeroData = {
   name: "Gülbeyaz Bayram Özer",
   role: "Full Stack Developer",
   aboutHeader: "Yaratıcı düşünür Minimalizm aşığı",
