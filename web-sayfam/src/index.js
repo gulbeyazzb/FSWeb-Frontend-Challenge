@@ -5,14 +5,21 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeProvider } from "@material-tailwind/react";
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+import { store } from "./reducers/store";
+import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>
+  <Provider store={store}>
+    <BrowserRouter>
+      <React.StrictMode>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </React.StrictMode>
+    </BrowserRouter>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
