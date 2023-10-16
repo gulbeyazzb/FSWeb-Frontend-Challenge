@@ -1,4 +1,4 @@
-export const Data = {
+export const HeroData = {
   name: "Gülbeyaz Bayram Özer",
   role: "Full Stack Developer",
   aboutHeader: "Creative thinker Minimalism lover",
