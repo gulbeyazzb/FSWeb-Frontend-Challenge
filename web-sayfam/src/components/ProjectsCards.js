@@ -5,15 +5,17 @@ import {
   CardFooter,
   Typography,
 } from "@material-tailwind/react";
-import { Data } from "../mocks/ProjectsData";
+import { ProjectsData } from "../mocks/ProjectsData";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const ProjectsCards = () => {
   const [showModal, setShowModal] = useState(false);
+  const ProjectsData = useSelector((store) => store.projectsData);
   return (
     <div className="">
       <div className="flex md:flex-row flex-col gap-2 items-center">
-        {Data.map((data) => (
+        {ProjectsData.map((data) => (
           <Card className="mt-6 w-[300px] m-auto py-10 pt-12 ">
             <CardHeader className="relative ">
               <button onClick={() => setShowModal(true)}>

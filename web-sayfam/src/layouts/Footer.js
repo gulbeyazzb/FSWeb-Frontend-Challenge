@@ -1,12 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import { useSelector } from "react-redux";
 
 export default function Footer() {
+  const FooterData = useSelector((store) => store.footerData);
   return (
     <div>
       <div className="dark:bg-[#141414]  m-auto md:p-[5.5rem] p-8 bg-[#F9F9F9] ">
         <h1 className="dark:text-[#AEBCCF] md:font-semibold  font-medium text-[#1F2937] md:text-[42px] text-3xl pb-6 mb-6 md:w-[500px] text-center md:text-left">
-          Let’s work together on your next product.
+          {FooterData.footerHeader}
         </h1>
         <div className="flex md:flex-row flex-col justify-between items-center gap-4 md:gap-0">
           <a
