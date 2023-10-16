@@ -22,7 +22,7 @@ function App() {
       <Footer />
       <a
         onClick={scrollToTop}
-        className="fixed right-10 bottom-2 rounded-[100%]"
+        className="fixed md:right-10 right-52 bottom-2 rounded-[100%]"
       >
         <i class="bx bx-up-arrow-circle text-[#7673a6] text-4xl hover:text-[#3730A3]"></i>
       </a>
