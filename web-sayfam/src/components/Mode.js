@@ -5,17 +5,17 @@ import { enAction, trAction } from "../actions/languageAction";
 export default function Mode() {
   const [toggle, setToggle] = useState(false);
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") === "Light" ? "Dark" : "Light"
+    localStorage.getItem("theme") === "light" ? "dark" : "light"
   );
 
   const dispatch = useDispatch();
-  const [lang, setLang] = useState(localStorage.getItem("lang"));
+  const [lang, setLang] = useState("English");
 
   const toggleButtonClass = " transform translate-x-5 sm:translate-x-6";
 
   useEffect(() => {
     if (
-      localStorage.theme === "Dark" ||
+      localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
@@ -23,17 +23,17 @@ export default function Mode() {
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, []);
+  }, [theme]);
 
   const changeTheme = () => {
     setToggle(!toggle);
-    setTheme(theme === "Light" ? "Dark" : "Light");
-    if (theme === "Dark") {
+    setTheme(theme === "light" ? "dark" : "light");
+    if (theme === "dark") {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "Dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "Light");
+      localStorage.setItem("theme", "light");
     }
   };
 
@@ -67,7 +67,7 @@ export default function Mode() {
             className="md:w-14 md:h-7 w-12 h-6 flex items-center dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full sm:p-1 cursor-pointer duration-700 ease-in-out "
             onClick={changeTheme}
           >
-            {theme === "Dark" && (
+            {theme === "dark" && (
               <i
                 class={
                   "bx bxs-moon text-[#FFE86E]  md:w-6 md:h-6 text-2xl sm:pb-8  transform  duration-700 ease-in-out " +
@@ -75,7 +75,7 @@ export default function Mode() {
                 }
               ></i>
             )}
-            {theme === "Light" && (
+            {theme === "light" && (
               <i
                 class={
                   " bx bxs-sun text-[#FFE86E]  md:w-6 md:h-6 text-2xl sm:pb-8  transform  duration-700 ease-in-out " +
