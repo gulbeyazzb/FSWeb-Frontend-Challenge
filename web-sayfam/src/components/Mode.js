@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { enAction, trAction } from "../actions/languageAction";
-import useLocalStorage from "../hooks/useLocalStorage";
 
 export default function Mode() {
+  const [toggle, setToggle] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") === "Light" ? "Dark" : "Light"
   );
 
-  const [toggle, setToggle] = useState(false);
   const dispatch = useDispatch();
-  const [en, setEn] = useState(true);
+  const [lang, setLang] = useState(localStorage.getItem("lang"));
 
   const toggleButtonClass = " transform translate-x-5 sm:translate-x-6";
 
@@ -39,8 +38,14 @@ export default function Mode() {
   };
 
   const changeLanguageMode = () => {
-    en ? dispatch(trAction()) : dispatch(enAction());
-    setEn(!en);
+    setLang(lang === "English" ? "Türkçe" : "English");
+    if (lang === "Türkçe") {
+      dispatch(trAction());
+      localStorage.setItem("lang", "Türkçe");
+    } else {
+      dispatch(enAction());
+      localStorage.setItem("lang", "English");
+    }
   };
 
   return (
@@ -50,7 +55,7 @@ export default function Mode() {
           onClick={changeLanguageMode}
           className="dark:text-[#BAB2E7] text-[#4731D3]"
         >
-          {en ? "Türkçe" : "English"}
+          {lang}
         </button>
       </div>
       <span className="md:float-right hidden md:inline-block text-[#777777] ">
