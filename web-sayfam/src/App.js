@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="dark:bg-[#252128] bg-white">
       <div className=" flex flex-col pt-6 sm:px-20 px-2 md:w-[1100px] md:m-auto">
         <Mode />
         <Header />
