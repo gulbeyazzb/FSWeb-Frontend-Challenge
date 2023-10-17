@@ -1,6 +1,5 @@
 import line from "../Assets/Line 11.png";
 import mePhoto from "../Assets/9C6BB119-4D9F-45F0-B1FD-9E332E9EF7BA-35928-0000062DD430959D (1).jpg";
-// import { HeroData } from "../mocks/HeroData";
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { useSelector } from "react-redux";
@@ -33,12 +32,14 @@ export default function Hero() {
             {HeroData.aboutBody}
           </p>
           <div className="flex md:gap-2 items-center justify-evenly md:justify-start">
-            <a
+            <Link
+              to="/contact"
+              exact
               onClick={scrollToBottom}
               className="hidden md:inline-block bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
             >
               Hire me
-            </a>
+            </Link>
             <a
               href="https://github.com/gulbeyazzb"
               target="_blank"
