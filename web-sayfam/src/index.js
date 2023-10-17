@@ -8,6 +8,7 @@ import { ThemeProvider } from "@material-tailwind/react";
 import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 import { store } from "./reducers/store";
 import { Provider } from "react-redux";
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
