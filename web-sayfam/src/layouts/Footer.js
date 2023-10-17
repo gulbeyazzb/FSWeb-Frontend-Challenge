@@ -19,12 +19,6 @@ export default function Footer() {
           </a>
           <div className="flex mt-6 md:mt-0 justify-between gap-6">
             <a
-              href="http://localhost:3000/"
-              className="dark:text-[#E1E1FF] text-[#0A0A14] font-medium text-lg"
-            >
-              Personal Blog
-            </a>
-            <a
               href="https://github.com/gulbeyazzb"
               className="text-[#17D18B] font-medium text-lg"
               target="_blank"
