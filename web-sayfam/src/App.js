@@ -9,8 +9,9 @@ function App() {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+
   return (
-    <div className=" dark:bg-[#252128]">
+    <div>
       <div className=" flex flex-col pt-6 sm:px-20 px-2 md:w-[1100px] md:m-auto">
         <Mode />
         <Header />
@@ -22,9 +23,9 @@ function App() {
       <Footer />
       <a
         onClick={scrollToTop}
-        className="fixed md:right-10 right-52 bottom-2 rounded-[100%]"
+        className="animate-bounce  fixed md:right-10 right-52 bottom-2 rounded-[100%]"
       >
-        <i class="bx bx-up-arrow-circle text-[#7673a6] text-4xl hover:text-[#3730A3]"></i>
+        <i class="bx bxs-chevron-up text-[#7673a6] text-4xl hover:text-[#3730A3]"></i>
       </a>
     </div>
   );
