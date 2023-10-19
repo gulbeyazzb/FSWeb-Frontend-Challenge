@@ -15,3 +15,47 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-white-btn {
+  @apply hover:bg-[#bbb6ff] hover:border-none;
+}
+
+.hover-dark-btn {
+  @apply hover:bg-[#9d96ff] hover:text-[#3730A3];
+}
+
+.hover-logo {
+  @apply hover:bg-[#3730A3] hover:text-white;
+}
+
+.hover-link {
+  @apply hover:text-[#3730A3];
+}
+
+.hover-text {
+  @apply hover:text-[#3730A3];
+}
+
+.hover-card {
+  @apply hover:p-4;
+}
+
+.hover-footer-text {
+  @apply hover:text-3xl;
+}
+
+.hover-dark-text {
+  @apply hover:dark:text-[#3730A3];
+}
+
+.hover-dark-logo {
+  @apply hover:dark:bg-[#3730A3] hover:text-white;
+}
+
+.hover-dark-white-btn {
+  @apply hover:dark:bg-[#bbb6ff] hover:border-none;
+}
+
+.blue-text {
+  @apply text-secondary-blue-600 dark:text-secondary-blue-100;
+}

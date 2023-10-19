@@ -43,7 +43,7 @@ const FormPage = () => {
       <div className="p flex flex-col gap-8 sm:px-20 px-2 h-full md:w-[1100px] md:m-auto ">
         <Link
           to="/"
-          className="pt-6 md:pt-0 font-semibold text-2xl text-[#7B61FF]  dark:text-[#8F88FF]"
+          className="hover-link pt-6 md:pt-0 font-semibold text-2xl text-[#7B61FF]  dark:text-[#8F88FF]"
         >
           <i class="bx bx-left-arrow-alt "></i>Profile
         </Link>

@@ -1,17 +1,25 @@
 import "./App.css";
-import Footer from "./layouts/Footer";
 import Main from "./layouts/Main";
 import { animateScroll as scroll } from "react-scroll";
 import Mode from "./components/Mode";
-import Header from "./layouts/Header";
+import { useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
+  useEffect(() => {
+    toast("Welcome My Profile");
+  }, []);
+
   return (
     <div className="dark:bg-[#252128] bg-white">
+      <div className="hidden md:inline">
+        <ToastContainer />
+      </div>
+
       <div className=" flex flex-col sm:px-20 px-2 md:w-[1100px] md:m-auto">
         <Mode />
       </div>

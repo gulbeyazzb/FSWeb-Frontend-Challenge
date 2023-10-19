@@ -24,7 +24,7 @@ const ProjectsCards = () => {
     <div className="py-4">
       <div className="flex flex-col gap-6 ">
         {ProjectsData.map((data) => (
-          <div className="rounded-xl shadow-md dark:shadow-white shadow-black flex flex-col md:flex-row gap-6 items-center  dark:bg-white bg-[#3730A3] dark:text-black text-white">
+          <div className="hover-card  rounded-xl shadow-md dark:shadow-white shadow-black flex flex-col md:flex-row gap-6 items-center  dark:bg-white bg-[#3730A3] dark:text-black text-white">
             <div className="">
               <button onClick={() => showImgModal(data.id)}>
                 <img

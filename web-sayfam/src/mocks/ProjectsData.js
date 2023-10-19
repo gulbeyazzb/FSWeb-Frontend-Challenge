@@ -37,7 +37,7 @@ export const ProjectsData = [
       "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
   },
   {
-    id: 3,
+    id: 4,
     image: project3,
     projectHeader: "Music Player",
     introduction:

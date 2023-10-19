@@ -61,7 +61,7 @@ export default function Mode() {
       <span className="md:float-right hidden md:inline-block text-[#777777] ">
         |
       </span>
-      <div className="flex float-left items-center md:gap-3 md:float-right pe-3 text-[#777777] dark:text-[#D9D9D9] font-bold text-base">
+      <div className="hover-text hover-dark-text flex float-left items-center md:gap-3 md:float-right pe-3 text-[#777777] dark:text-[#D9D9D9] font-bold text-base">
         <div className="flex flex-col justify-center items-center ">
           <button
             className="md:w-14 md:h-7 w-8 h-4 flex items-center dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full sm:p-1 cursor-pointer duration-700 ease-in-out "
