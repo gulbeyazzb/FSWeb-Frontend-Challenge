@@ -12,15 +12,12 @@ function App() {
 
   return (
     <div className="dark:bg-[#252128] bg-white">
-      <div className=" flex flex-col pt-6 sm:px-20 px-2 md:w-[1100px] md:m-auto">
+      <div className=" flex flex-col sm:px-20 px-2 md:w-[1100px] md:m-auto">
         <Mode />
-        <Header />
-      </div>
-      <div className=" flex flex-col pt-6 sm:px-20 px-2 h-full md:w-[1100px] md:m-auto ">
-        <Main />
       </div>
 
-      <Footer />
+      <Main />
+
       <a
         onClick={scrollToTop}
         className="animate-bounce  fixed md:right-10 right-52 bottom-2 rounded-[100%]"
