@@ -33,8 +33,7 @@ export const ProjectsData = [
       "React ile geliştirilen, Tailwind ile tasarım tarafı zenginleştirilen portföy web sayfası. Responsive olarak geliştirilmiştir.",
     techStack: ["React", "Redux", "JavaScript", "Tailwind"],
     github: "https://github.com/gulbeyazzb/FSWeb-Frontend-Challenge",
-    website:
-      "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
+    website: "https://gulbeyaz-bayram-ozer-portfolio.vercel.app/",
   },
   {
     id: 4,
