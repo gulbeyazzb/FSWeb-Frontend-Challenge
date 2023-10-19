@@ -24,7 +24,7 @@ export default function Navbar() {
       <Link
         to="/contact"
         onClick={scrollToTop}
-        className="hover-white-btn cursor-pointer text-center md:hidden text-secondary-blue-600 bg-white border-solid border border-secondary-blue-600 dark:border-none rounded-md font-medium text-lg  w-[120px] h-10"
+        className="animate-pulse duration-700 hover-white-btn cursor-pointer text-center md:hidden text-secondary-blue-600 bg-white border-solid border border-secondary-blue-600 dark:border-none rounded-md font-medium text-lg  w-[120px] h-10"
       >
         {NavBarData.hireMe}
       </Link>
@@ -37,7 +37,7 @@ export default function Navbar() {
       <Link
         to="/contact"
         onClick={scrollToTop}
-        className="hover-white-btn cursor-pointer md:py-3 py-4 px-6 md:px-8 text-center hidden md:inline-block text-[#3730A3] bg-white border-solid border-2 border-[#3730A3] dark:border-none rounded-md font-medium text-lg h-12"
+        className="animate-pulse duration-700 hover-white-btn cursor-pointer md:py-3 py-4 px-6 md:px-8 text-center hidden md:inline-block text-[#3730A3] bg-white border-solid border-2 border-[#3730A3] dark:border-none rounded-md font-medium text-lg h-12"
       >
         {NavBarData.hireMe}
       </Link>

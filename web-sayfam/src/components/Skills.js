@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const SkillsData = useSelector((store) => store.skillsData);
@@ -10,7 +11,14 @@ const Skills = () => {
 
       <div className="grid grid-rows-6 gap-4 grid-flow-col font-medium md:text-3xl text-xl text-[#4338CA] dark:text-[#B7AAFF] pb-6">
         {SkillsData.skills.map((skill) => (
-          <div className="flex gap-4 items-center">{skill}</div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="flex gap-4 items-center"
+          >
+            {skill}
+          </motion.div>
         ))}
       </div>
     </div>

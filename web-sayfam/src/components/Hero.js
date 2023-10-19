@@ -3,6 +3,7 @@ import mePhoto from "../Assets/9C6BB119-4D9F-45F0-B1FD-9E332E9EF7BA-35928-000006
 import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { useSelector } from "react-redux";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const scrollToBottom = () => {
@@ -21,13 +22,23 @@ export default function Hero() {
               <p className="text-center">{HeroData.role}</p>
             </p>
           </div>
-          <img
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             className="md:w-[300px] w-52 md:float-right m-auto rounded-md"
-            src={mePhoto}
-          ></img>
-          <h2 className="dark:text-[#AEBCCF] text-[#1F2937] md:font-bold md:text-7xl text-xl font-bold md:pb-6 ">
+          >
+            <img src={mePhoto}></img>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className=" dark:text-[#AEBCCF] text-[#1F2937] md:font-bold md:text-7xl text-xl font-bold md:pb-6 "
+          >
             {HeroData.aboutHeader}
-          </h2>
+          </motion.div>
           <p className="dark:text-white text-[#6B7280] font-normal text-lg md:w-[553px]  pb-6">
             {HeroData.aboutBody}
           </p>
@@ -36,7 +47,7 @@ export default function Hero() {
               to="/contact"
               exact
               onClick={scrollToBottom}
-              className="hover-dark-white-btn hover-dark-btn hidden md:inline-block bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
+              className="animate-pulse duration-700 hover-dark-white-btn hover-dark-btn hidden md:inline-block bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
             >
               Hire me
             </Link>
@@ -50,7 +61,7 @@ export default function Hero() {
             </a>
             <Link
               to="/contact"
-              className="hover-dark-white-btn hover-dark-btn md:hidden bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
+              className="animate-pulse duration-700 hover-dark-white-btn hover-dark-btn md:hidden bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
             >
               Hire Me
             </Link>

@@ -1,35 +1,50 @@
+import project1 from "../Assets/projectsImg/screencapture-fs-web-s3-g1-food-el-blog-vercel-app-2023-10-19-14_36_29.png";
+import project2 from "../Assets/projectsImg/screencapture-fsweb-s7-challenge-pizza-taupe-vercel-app-2023-10-19-14_35_12.png";
+import project3 from "../Assets/projectsImg/musicapp.png";
+import project4 from "../Assets/projectsImg/screencapture-localhost-3000-2023-10-19-16_44_14.png";
+
 export const TrProjectsData = [
   {
-    image:
-      "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    projectHeader: "UI/UX Review Check",
+    id: 1,
+    image: project4,
+    projectHeader: "E-Ticaret Web Uygulaması",
     introduction:
-      " Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
-    techStack: ["react", "Redux", "Axios"],
+      "Front-end tarafında React kullanılarak geliştirilmekte olan bu proje, back-end tarafında Java kullanılarak oluşturulmak üzere tasarlandı. Kullanıcılara kullanışlı bir arayüz sunan bu projede, login/register yönetimi mevcuttur. Yine kullanıcıların alışveriş boyunca takipte kalacakları tüm süreç plana dahil edilerek geliştirilmekte ve bu sebeple güvenliğe öncelik verilerek JWT (JSON Web Token) kullanılmaktadır. CSS tarafında Tailwind ile çalışılmıştır",
+    techStack: ["React", "JavaScript", "Java"],
+    github: "https://github.com/gulbeyazzb/e-commerceProject",
+    website:
+      "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
+  },
+  {
+    id: 2,
+    image: project2,
+    projectHeader: "Pizza Siparişi",
+    introduction:
+      "React ile geliştirilen bir projede aktif olarak kullanılan teknolojiler yine bu projede varlığını sürdürmektedir.Kullanıcı dostu arayüzü sayesinde sayfalar arası geçişler ve sipariş süreci eğlencelidir.Ayrıca Yup ile validasyon kontrolü gerçekleştirildiğinden sipariş sürecinde kullanıcının eksik veya hatalı bilgi girmesi denetlenmektedir.",
+    techStack: ["React", "JavaScript", "Yup"],
     github: "https://github.com/gulbeyazzb",
     website:
       "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    projectHeader: "UI/UX Review Check",
+    id: 3,
+    image: project1,
+    projectHeader: "Portföy",
     introduction:
-      " Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
-    techStack: ["react", "Redux", "Axios"],
-    github: "https://github.com/gulbeyazzb",
+      "Portfolio web page developed with React and enriched in design with Tailwind. It was developed to be responsive.",
+    techStack: ["React", "Redux", "JavaScript", "Tailwind"],
+    github: "https://github.com/gulbeyazzb/FSWeb-Frontend-Challenge",
     website:
       "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    projectHeader: "UI/UX Review Check",
+    id: 4,
+    image: project3,
+    projectHeader: "Müzik Çalar Web Uygulaması",
     introduction:
-      " Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulum çerez eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalarda her türlü özelleştirmeyi mümkün kılar.",
-    techStack: ["react", "Redux", "Axios"],
-    github: "https://github.com/gulbeyazzb",
-    website:
-      "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
+      " Yazılım gelişim sürecinde Javascript ile geliştirilmiş, müzik çalar web uygulaması.",
+    techStack: ["JavaScript, HTML, CSS"],
+    github: "https://github.com/gulbeyazzb/MusicPlayerApp",
+    website: "https://music-player-app-theta.vercel.app/",
   },
 ];

@@ -9,8 +9,8 @@ export const ProjectsData = [
     image: project4,
     projectHeader: "E-commerce ",
     introduction:
-      " E-ticaret web sitesi için ön uç React kullanılarak geliştirildi ve arka uç Java kullanılarak oluşturuldu. Kullanıcıların hesap oluşturmasına, sepete ürün eklemesine ve güvenli ödeme işlemlerini tamamlamasına olanak tanır. Kullanıcı kimlik doğrulaması ve oturum yönetimi, güvenlik ve kullanıcı deneyimine öncelik verilerek JWT (JSON Web Token) kullanılarak uygulandı.",
-    techStack: ["React", "JavaScript", "Java", "Spring Boot"],
+      "This project, which is being developed using React on the front-end, was designed to be created using Java on the back-end. This project, which offers users a useful interface, has login/register management. Again, the entire process that users will be able to follow throughout the shopping process is included in the plan and therefore JWT (JSON Web Token) is used, prioritizing security. Worked with Tailwind on CSS side",
+    techStack: ["React", "JavaScript", "Java"],
     github: "https://github.com/gulbeyazzb/e-commerceProject",
     website:
       "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
@@ -20,8 +20,8 @@ export const ProjectsData = [
     image: project2,
     projectHeader: "Pizza Order",
     introduction:
-      " React ile oluşturulan 'SPA', React projelerinde aktif olarak kullanılan çeşitli teknolojileri içerir. Ayrıca kullanıcı dostu arayüzü sayesinde sipariş süreci adım adım takip edilebilmektedir.",
-    techStack: ["React", "JavaScript", "Axios"],
+      "The technologies actively used in a project developed with React continue to exist in this project. Thanks to the user-friendly interface, transitions between pages and the ordering process are fun. In addition, since validation control is carried out with Yup, it is checked that the user enters missing or incorrect information during the ordering process.",
+    techStack: ["React", "JavaScript", "Yup"],
     github: "https://github.com/gulbeyazzb/fsweb-s7-challenge-pizza",
     website: "https://fsweb-s7-challenge-pizza-taupe.vercel.app/",
   },
@@ -30,8 +30,8 @@ export const ProjectsData = [
     image: project1,
     projectHeader: "Portfolio",
     introduction:
-      " Bu projede hazırladığım bölümler, yazılım yolculuğumda kaydırmalı gösterim, duyarlı tasarım ve tümü HTML, CSS ve JavaScript kullanılarak geliştirilen form öğelerinin birleşimini içeren ilk bölümlerdir.",
-    techStack: ["React", "Redux", "JavaScript"],
+      "React ile geliştirilen, Tailwind ile tasarım tarafı zenginleştirilen portföy web sayfası. Responsive olarak geliştirilmiştir.",
+    techStack: ["React", "Redux", "JavaScript", "Tailwind"],
     github: "https://github.com/gulbeyazzb/FSWeb-Frontend-Challenge",
     website:
       "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
@@ -41,8 +41,8 @@ export const ProjectsData = [
     image: project3,
     projectHeader: "Music Player",
     introduction:
-      " A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-    techStack: ["React", "Redux", "JavaScript"],
+      "Music player web application developed with Javascript during the software development process.",
+    techStack: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/gulbeyazzb/MusicPlayerApp",
     website: "https://music-player-app-theta.vercel.app/",
   },

@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <div className="dark:bg-[#252128] bg-white">
+    <div className="relative dark:bg-[#252128] bg-white">
       <div className="hidden md:inline">
         <ToastContainer />
       </div>
@@ -25,6 +25,8 @@ function App() {
       </div>
 
       <Main />
+      <div className="dark:invisible md:dark:visible absolute top-96 right-0 z-0 p-32 bg-[#a7a5cb] md:bg-[#7673a6] rounded-l-full w-2"></div>
+      <div className="dark:invisible md:dark:visible absolute top-0 left-[-300px] z-0 p-60 bg-[#a7a5cb] md:bg-[#7673a6] rounded-full w-20"></div>
 
       <a
         onClick={scrollToTop}

@@ -9,7 +9,7 @@ import Footer from "../layouts/Footer";
 export const HomePage = () => {
   return (
     <>
-      <div className=" flex flex-col pt-6 sm:px-20 px-2 h-full md:w-[1100px] md:m-auto ">
+      <div className="relative z-50 flex flex-col pt-6 sm:px-20 px-2 h-full md:w-[1100px] md:m-auto ">
         <Header />
         <Hero />
         <Skills />
