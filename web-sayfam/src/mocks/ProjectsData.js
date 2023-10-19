@@ -30,7 +30,7 @@ export const ProjectsData = [
     image: project1,
     projectHeader: "Portfolio",
     introduction:
-      "React ile geliştirilen, Tailwind ile tasarım tarafı zenginleştirilen portföy web sayfası. Responsive olarak geliştirilmiştir.",
+      "Portfolio web page developed with React and enriched in design with Tailwind. It was developed to be responsive.",
     techStack: ["React", "Redux", "JavaScript", "Tailwind"],
     github: "https://github.com/gulbeyazzb/FSWeb-Frontend-Challenge",
     website: "https://gulbeyaz-bayram-ozer-portfolio.vercel.app/",
