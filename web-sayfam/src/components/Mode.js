@@ -5,17 +5,17 @@ import { enAction, trAction } from "../actions/languageAction";
 export default function Mode() {
   const [toggle, setToggle] = useState(false);
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") === "light" ? "dark" : "light"
+    localStorage.getItem("theme") === "Light" ? "Dark" : "Light"
   );
 
   const dispatch = useDispatch();
   const [lang, setLang] = useState("English");
 
-  const toggleButtonClass = " transform translate-x-5 sm:translate-x-6";
+  const toggleButtonClass = " transform translate-x-3 md:translate-x-6";
 
   useEffect(() => {
     if (
-      localStorage.theme === "dark" ||
+      localStorage.theme === "Dark" ||
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
@@ -27,13 +27,13 @@ export default function Mode() {
 
   const changeTheme = () => {
     setToggle(!toggle);
-    setTheme(theme === "light" ? "dark" : "light");
-    if (theme === "dark") {
+    setTheme(theme === "Light" ? "Dark" : "Light");
+    if (theme === "Dark") {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("theme", "Dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "Light");
     }
   };
 
@@ -49,7 +49,7 @@ export default function Mode() {
   };
 
   return (
-    <div className="flex flex-row-reverse justify-between md:block">
+    <div className="flex flex-row-reverse justify-between md:block pt-4">
       <div className="float-right ps-2 text-[#777777] font-bold text-base">
         <button
           onClick={changeLanguageMode}
@@ -64,21 +64,21 @@ export default function Mode() {
       <div className="flex float-left items-center md:gap-3 md:float-right pe-3 text-[#777777] dark:text-[#D9D9D9] font-bold text-base">
         <div className="flex flex-col justify-center items-center ">
           <button
-            className="md:w-14 md:h-7 w-12 h-6 flex items-center dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full sm:p-1 cursor-pointer duration-700 ease-in-out "
+            className="md:w-14 md:h-7 w-8 h-4 flex items-center dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full sm:p-1 cursor-pointer duration-700 ease-in-out "
             onClick={changeTheme}
           >
-            {theme === "dark" && (
+            {theme === "Dark" && (
               <i
                 class={
-                  "bx bxs-moon text-[#FFE86E]  md:w-6 md:h-6 text-2xl sm:pb-8  transform  duration-700 ease-in-out " +
+                  "bx bxs-moon text-[#FFE86E]  md:w-6 md:h-6 md:text-2xl text-lg md:pb-8  transform  duration-700 ease-in-out " +
                   (toggle ? null : toggleButtonClass)
                 }
               ></i>
             )}
-            {theme === "light" && (
+            {theme === "Light" && (
               <i
                 class={
-                  " bx bxs-sun text-[#FFE86E]  md:w-6 md:h-6 text-2xl sm:pb-8  transform  duration-700 ease-in-out " +
+                  " bx bxs-sun text-[#FFE86E] md:text-2xl text-lg  md:w-6 md:h-6 md:pb-8  transform  duration-700 ease-in-out " +
                   (toggle ? null : toggleButtonClass)
                 }
               ></i>
