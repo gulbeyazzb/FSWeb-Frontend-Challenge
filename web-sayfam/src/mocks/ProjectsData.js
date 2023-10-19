@@ -9,7 +9,7 @@ export const ProjectsData = [
     image: project4,
     projectHeader: "E-commerce ",
     introduction:
-      " A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+      " E-ticaret web sitesi için ön uç React kullanılarak geliştirildi ve arka uç Java kullanılarak oluşturuldu. Kullanıcıların hesap oluşturmasına, sepete ürün eklemesine ve güvenli ödeme işlemlerini tamamlamasına olanak tanır. Kullanıcı kimlik doğrulaması ve oturum yönetimi, güvenlik ve kullanıcı deneyimine öncelik verilerek JWT (JSON Web Token) kullanılarak uygulandı.",
     techStack: ["React", "JavaScript", "Java", "Spring Boot"],
     github: "https://github.com/gulbeyazzb/e-commerceProject",
     website:
@@ -20,7 +20,7 @@ export const ProjectsData = [
     image: project2,
     projectHeader: "Pizza Order",
     introduction:
-      " A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+      " React ile oluşturulan 'SPA', React projelerinde aktif olarak kullanılan çeşitli teknolojileri içerir. Ayrıca kullanıcı dostu arayüzü sayesinde sipariş süreci adım adım takip edilebilmektedir.",
     techStack: ["React", "JavaScript", "Axios"],
     github: "https://github.com/gulbeyazzb/fsweb-s7-challenge-pizza",
     website: "https://fsweb-s7-challenge-pizza-taupe.vercel.app/",
@@ -30,7 +30,7 @@ export const ProjectsData = [
     image: project1,
     projectHeader: "Portfolio",
     introduction:
-      " A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+      " Bu projede hazırladığım bölümler, yazılım yolculuğumda kaydırmalı gösterim, duyarlı tasarım ve tümü HTML, CSS ve JavaScript kullanılarak geliştirilen form öğelerinin birleşimini içeren ilk bölümlerdir.",
     techStack: ["React", "Redux", "JavaScript"],
     github: "https://github.com/gulbeyazzb/FSWeb-Frontend-Challenge",
     website:
