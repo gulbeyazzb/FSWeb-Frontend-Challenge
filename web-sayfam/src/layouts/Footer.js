@@ -6,7 +6,7 @@ export default function Footer() {
   const FooterData = useSelector((store) => store.footerData);
   return (
     <div>
-      <div className="dark:bg-[#141414] md:p-[5.5rem] p-8 bg-[#F9F9F9] flex flex-col gap-6">
+      <div className="relative z-50 dark:bg-[#141414] md:p-[5.5rem] p-8 bg-[#F9F9F9] flex flex-col gap-6">
         <Link
           to="/contact"
           className="hover-footer-text dark:text-[#AEBCCF] md:font-semibold  font-medium text-[#1F2937] md:text-5xl text-3xl pb-6 mb-6 md:w-[500px] text-center md:text-left"
