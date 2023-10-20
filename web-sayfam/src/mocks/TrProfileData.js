@@ -1,6 +1,6 @@
 export const TrProfileData = {
   profileHeader: "Biyografi",
-  birthDate: " 3 Mart 1993",
+  birthDate: " 3 Mart 1996",
   city: " Konya,Türkiye",
   education:
     " Mehmet Akif Ersoy Üniversitesi, Bilgisayar Mühendisliği Lisans (3.75), 2020",

@@ -1,6 +1,6 @@
 export const ProfileData = {
   profileHeader: "Profile",
-  birthDate: " 3 Mart 1993",
+  birthDate: " 3 Mart 1996",
   city: " Konya,Turkey",
   education:
     " Mehmet Akif Ersoy University, Computer Engineering Bachelor (3.75), 2020",
