@@ -10,7 +10,6 @@ const ProjectsCards = () => {
   const showImgModal = (id) => {
     const modalData = ProjectsData.find((project) => project.id === Number(id));
     setNewModalData(modalData);
-    console.log(newModalData);
     setShowModal(true);
   };
   const ProjectsData = useSelector((store) => store.projectsData);
@@ -35,15 +34,15 @@ const ProjectsCards = () => {
 
               {showModal && (
                 <button
-                  className="text-danger-700 text-lg e font-medium"
+                  className="object-contain text-danger-700 text-lg e font-medium"
                   onClick={() => setShowModal(false)}
                 >
-                  <div className=" fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex flex-col justify-center items-center">
-                    <div className="text-right">
+                  <div className="object-contain fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm flex flex-col md:justify-center md:items-center">
+                    <div className="md:text-right">
                       <img
                         src={newModalData.image}
                         alt="card-image"
-                        className="p-[610px]"
+                        className="object-contain md:p-[610px]"
                       />
                     </div>
                   </div>
