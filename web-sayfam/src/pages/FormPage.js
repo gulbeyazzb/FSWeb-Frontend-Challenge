@@ -40,7 +40,7 @@ const FormPage = () => {
 
   return (
     <>
-      <div className="p flex flex-col gap-8 sm:px-20 px-2 h-full md:w-[1100px] md:m-auto ">
+      <div className="relative z-50 p flex flex-col gap-8 sm:px-20 px-2 h-full md:w-[1100px] md:m-auto ">
         <Link
           to="/"
           className="hover-link pt-6 md:pt-0 font-semibold text-2xl text-[#7B61FF]  dark:text-[#8F88FF]"
