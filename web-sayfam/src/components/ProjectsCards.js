@@ -52,7 +52,7 @@ const ProjectsCards = () => {
             <div className="md:w-[600px]">
               <div className="flex flex-col gap-6">
                 <div>
-                  <div className="flex md:flex-row flex-col md:justify-between items-center">
+                  <div className="flex md:flex-row flex-col md:justify-between items-center justify-center ">
                     {" "}
                     <Typography
                       variant="h5"
@@ -72,15 +72,15 @@ const ProjectsCards = () => {
 
                   <Typography>{data.introduction}</Typography>
                 </div>
-                <div className="flex md:flex-row flex-wrap gap-3">
+                <div className="flex md:flex-row flex-wrap gap-3 justify-center">
                   {data.techStack.map((tech) => (
-                    <p className="border-solid border border-white bg-white text-[#3730A3]  flex items-center gap-2  dark:bg-[#383838] dark:text-[#E1E1FF] w-[131px] dark:border-[#E1E1FF] text-sm font-medium pl-5 rounded-md  h-12">
+                    <p className="border-solid border  border-white bg-white text-[#3730A3]  flex items-center gap-2  dark:bg-[#383838] dark:text-[#E1E1FF] w-[131px] dark:border-[#E1E1FF] text-sm font-medium pl-5 rounded-md  h-12">
                       {tech}
                     </p>
                   ))}
                 </div>
               </div>
-              <div className="flex md:hidden gap-4 px-8 flex-end text-[#3730A3] underline">
+              <div className="flex md:hidden justify-end gap-6 py-4 dark:text-[#3730A3] text-white underline">
                 <a href={data.github} target="_blank">
                   Github
                 </a>

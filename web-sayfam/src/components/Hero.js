@@ -28,7 +28,7 @@ export default function Hero() {
             viewport={{ once: true }}
             className="md:w-[300px] w-52 md:float-right m-auto rounded-md"
           >
-            <img src={mePhoto}></img>
+            <img src={mePhoto} className="rounded-full py-3 h-full"></img>
           </motion.div>
 
           <motion.div

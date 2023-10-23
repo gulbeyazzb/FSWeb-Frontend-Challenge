@@ -23,13 +23,13 @@ const FormPage = () => {
 
   const onFormSubmit = (formData) => {
     toast("Mesajınız başarıyla gönderiliyor");
-
+    console.log(formData);
     setTimeout(() => {
       push.push("/");
     }, 2000);
 
     axios
-      .post("olmayan-bir-url.com", formData)
+      .post("https://reqres.in/api/workintech", formData)
       .then((res) => {
         localStorage.setItem("formData", JSON.stringify(formData));
       })

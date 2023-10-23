@@ -51,12 +51,12 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <div className=" w-[576.9px] md:mt-0 mt-5">
+          <div className="md:mt-0 mt-5">
             <h6 className="font-medium md:text-3xl text-xl text-[#4338CA] dark:text-[#B7AAFF] pb-6">
               {ProfileData.aboutHeader}
             </h6>
             {ProfileData.about.map((p) => (
-              <p className="flex gap-3 font-normal text-lg text-[#6B7280] dark:text-white w-[400px]">
+              <p className="flex gap-3 font-normal text-lg text-[#6B7280] dark:text-white ">
                 <br /> {p}
               </p>
             ))}
