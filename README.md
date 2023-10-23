@@ -36,7 +36,7 @@ Not\* Bu dökümanın en sonunda da, sunumda seni değerlendireceğimiz başlık
 - [x] Tasarımdaki her bir section için ayrı bir component oluşturun.
 - [x] Her component'in style'ını ayarlayın.
 - [x] Verilerinizi kendi oluşturduğunuz, mock (örnek) verileri statik bir js dosyasından çekin.
-- [ ] `axios` ve reqres.in gibi bir servisle, web API simüle et.
+- [x] `axios` ve reqres.in gibi bir servisle, web API simüle et.
 - [x] Dark Mode tasarımı da entegre edin.
 - [x] Türkçe-İngilizce içerik oluşturun.
 - [x] Responsive özelleştirmelerini yapın.

@@ -51,7 +51,7 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <div className="md:mt-0 mt-5">
+          <div className="md:w-[29rem] md:mt-0 mt-5">
             <h6 className="font-medium md:text-3xl text-xl text-[#4338CA] dark:text-[#B7AAFF] pb-6">
               {ProfileData.aboutHeader}
             </h6>
