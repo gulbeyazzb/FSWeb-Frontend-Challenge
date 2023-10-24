@@ -23,7 +23,6 @@ const FormPage = () => {
 
   const onFormSubmit = (formData) => {
     toast("Mesajınız başarıyla gönderiliyor");
-    console.log(formData);
     setTimeout(() => {
       push.push("/");
     }, 2000);
