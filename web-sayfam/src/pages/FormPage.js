@@ -68,7 +68,6 @@ const FormPage = () => {
                 },
               }}
               invalid={!!errors.email?.message}
-              data-testid="email-input"
             />
             <FormFeedback className="text-deep-orange-900">
               {errors.email?.message}
@@ -98,7 +97,6 @@ const FormPage = () => {
             formNoValidate="formnovalidate"
             value="Send Message"
             disabled={false}
-            data-testid="login-submit-btn"
           />
           <ToastContainer />
         </Form>
