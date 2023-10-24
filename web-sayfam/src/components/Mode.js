@@ -27,7 +27,8 @@ export default function Mode() {
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [theme]);
+    setSwitchIcon(switchIcon);
+  }, [theme, switchIcon]);
 
   const changeTheme = () => {
     setToggle(!toggle);
@@ -74,22 +75,12 @@ export default function Mode() {
             className="w-14 h-7  flex  items-center gap-7 text-lg dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full sm:p-1 cursor-pointer duration-700 ease-in-out   "
             onClick={changeTheme}
           >
-            {theme === "Dark" && (
-              <i
-                class={
-                  `bx bxs-${switchIcon} text-[#FFE86E]  md:w-6 md:h-6 text-2xl  md:pb-8 transform  duration-700 ease-in-out py-[0.03] px-1 rounded-full bg-[#4c4867] md:border-none md:p-0 md:bg-transparent  md:rounded-none  ` +
-                  (toggle ? null : toggleButtonClass)
-                }
-              ></i>
-            )}
-            {theme === "Light" && (
-              <i
-                class={
-                  `bx bxs-${switchIcon} text-[#FFE86E] text-2xl  md:w-6 md:h-6 transform md:pb-8  duration-700 ease-in-out p-[0.03rem] px-1 rounded-full bg-[#4731D3] border  md:border-none md:p-0 md:bg-transparent md:rounded-none ` +
-                  (toggle ? null : toggleButtonClass)
-                }
-              ></i>
-            )}
+            <i
+              class={
+                `bx bxs-${switchIcon} text-[#FFE86E]  md:w-6 md:h-6 text-2xl  md:pb-8 transform  duration-700 ease-in-out py-[0.03] px-1 rounded-full bg-[#4c4867] md:border-none md:p-0 md:bg-transparent  md:rounded-none  ` +
+                (toggle ? null : toggleButtonClass)
+              }
+            ></i>
           </button>
         </div>
         <button onClick={changeTheme}> {theme}Mode</button>
