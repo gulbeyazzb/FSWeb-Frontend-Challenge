@@ -12,7 +12,7 @@ export default function Mode() {
   );
 
   const dispatch = useDispatch();
-  const [lang, setLang] = useState("English");
+  const [lang, setLang] = useState("Türkçe");
 
   const toggleButtonClass =
     "scroll-smooth  transform translate-x-5 md:translate-x-6";
