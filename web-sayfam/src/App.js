@@ -11,7 +11,7 @@ function App() {
   };
 
   useEffect(() => {
-    toast("Welcome My Profile");
+    toast("Welcome To My Profile");
   }, []);
 
   return (
