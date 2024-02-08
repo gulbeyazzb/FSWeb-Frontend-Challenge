@@ -12,8 +12,7 @@ export const ProjectsData = [
       "This project, which is being developed using React on the front-end, was designed to be created using Java on the back-end. This project, which offers users a useful interface, has login/register management. Again, the entire process that users will be able to follow throughout the shopping process is included in the plan and therefore JWT (JSON Web Token) is used, prioritizing security. Worked with Tailwind on CSS side",
     techStack: ["React", "JavaScript", "Java"],
     github: "https://github.com/gulbeyazzb/e-commerceProject",
-    website:
-      "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
+    website: "https://e-commerce-project-vzpa.vercel.app/",
   },
   {
     id: 2,
