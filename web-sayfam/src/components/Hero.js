@@ -43,14 +43,15 @@ export default function Hero() {
             {HeroData.aboutBody}
           </p>
           <div className="flex md:gap-2 items-center justify-evenly md:justify-start">
-            <Link
-              to="/contact"
+            <a
+              href="mailto:glbzbayram@gmail.com"
+              target="_blank"
               exact
               onClick={scrollToBottom}
               className="animate-pulse duration-700 hover-dark-white-btn hover-dark-btn hidden md:inline-block bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
             >
               Hire me
-            </Link>
+            </a>
             <a
               href="https://github.com/gulbeyazzb"
               target="_blank"
@@ -59,12 +60,13 @@ export default function Hero() {
               <i class="bx bxl-github text-[#3730A3] dark:text-[#E1E1FF] text-2xl "></i>
               Github
             </a>
-            <Link
-              to="/contact"
+            <a
+              href="mailto:glbzbayram@gmail.com"
+              target="_blank"
               className="animate-pulse duration-700 hover-dark-white-btn hover-dark-btn md:hidden bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
             >
               Hire Me
-            </Link>
+            </a>
             <a
               href="https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/"
               target="_blank"

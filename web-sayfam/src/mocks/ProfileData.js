@@ -11,7 +11,6 @@ export const ProfileData = {
   ],
   aboutHeader: "About Me",
   about: [
-    "I am an aspiring full-stack developer with a growth mindset to gain new skills and constantly improve myself with new challenges.",
-    "After my 4-year computer engineering degree, in order to transform myself into a much better version of myself and to improve myself in the software skills that I see as lacking, I completed the 6-month intensive Workintech full-stack development program and gained good skills in front end, back end and CS.",
+    "After completing my undergraduate education in Computer Engineering as an honor student, I applied to the Workintech Full-Stack Developer program in order to combine my theoretical education with practical, current technologies. I was selected for the program among 1800 candidates. In the program that lasted all day for 6 months, I gained command of javascript, java,react, redux, spring boot, postgresql, axios, tailwind technologies. During the program, I successfully completed a comprehensive project with the e-commerce web application I developed, in addition to around 80 projects available on my Github. I am a responsible and good team member who works regardless of working hours",
   ],
 };

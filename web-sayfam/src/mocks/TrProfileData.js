@@ -11,7 +11,6 @@ export const TrProfileData = {
   ],
   aboutHeader: "Hakkımda",
   about: [
-    "Yeni beceriler kazanmak ve yeni zorluklarla kendimi sürekli geliştirmek için büyüme zihniyetine sahip, hevesli bir tam kapsamlı geliştiriciyim.",
-    "4 yıllık bilgisayar mühendisliği eğitimimin ardından kendimi çok daha iyi bir versiyona dönüştürmek ve eksik gördüğüm yazılım becerilerimde kendimi geliştirmek amacıyla 6 aylık yoğun Workintech full-stack geliştirme programını tamamladım ve Ön uç, arka uç ve CS'de iyi beceriler kazandım.",
+    "Bilgisayar Mühendisliği lisans eğitimimi onur öğrenci olarak tamamladıktan sonra,teorik eğitimimle pratik, güncel teknolojileri birleştirmek amacıyla Workintech Full-Stack Developer programına başvurdum. Programa 1800 aday arasından seçildim. 6 ay boyunca tüm gün süren programda javascript, java, react, redux, spring boot, postgresql, axios, tailwind teknolojilerine hakimiyet kazandım. Program boyunca Github'ımda mevcut olan, tamamladığım 80 civarı projenin yanında geliştirdiğim e-ticaret web uygulaması ile kapsamlı bir projeyi başarıyla tamamladım. Mesai saati demeden çalışan, sorumluluk sahibi ve iyi bir takım üyesiyim.",
   ],
 };

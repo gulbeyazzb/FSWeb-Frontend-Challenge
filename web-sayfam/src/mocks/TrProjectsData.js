@@ -12,8 +12,7 @@ export const TrProjectsData = [
       "Front-end tarafında React kullanılarak geliştirilmekte olan bu proje, back-end tarafında Java kullanılarak oluşturulmak üzere tasarlandı. Kullanıcılara kullanışlı bir arayüz sunan bu projede, login/register yönetimi mevcuttur. Yine kullanıcıların alışveriş boyunca takipte kalacakları tüm süreç plana dahil edilerek geliştirilmekte ve bu sebeple güvenliğe öncelik verilerek JWT (JSON Web Token) kullanılmaktadır. CSS tarafında Tailwind ile çalışılmıştır",
     techStack: ["React", "JavaScript", "Java"],
     github: "https://github.com/gulbeyazzb/e-commerceProject",
-    website:
-      "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
+    website: "https://e-commerce-project-vzpa.vercel.app/",
   },
   {
     id: 2,
@@ -23,8 +22,7 @@ export const TrProjectsData = [
       "React ile geliştirilen bir projede aktif olarak kullanılan teknolojiler yine bu projede varlığını sürdürmektedir.Kullanıcı dostu arayüzü sayesinde sayfalar arası geçişler ve sipariş süreci eğlencelidir.Ayrıca Yup ile validasyon kontrolü gerçekleştirildiğinden sipariş sürecinde kullanıcının eksik veya hatalı bilgi girmesi denetlenmektedir.",
     techStack: ["React", "JavaScript", "Yup"],
     github: "https://github.com/gulbeyazzb",
-    website:
-      "https://www.linkedin.com/in/g%C3%BClbeyaz-bayram-%C3%B6zer-4a6454159/",
+    website: "https://fsweb-s7-challenge-pizza-taupe.vercel.app/",
   },
   {
     id: 3,

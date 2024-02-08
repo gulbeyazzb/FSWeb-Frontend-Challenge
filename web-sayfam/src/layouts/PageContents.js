@@ -12,9 +12,9 @@ export default function PageContents({ ref }) {
       <Route path="/" exact>
         <HomePage />
       </Route>
-      <Route path="/contact" exact>
+      {/* <Route path="/contact" exact>
         <FormPage />
-      </Route>
+      </Route> */}
     </Switch>
   );
 }
