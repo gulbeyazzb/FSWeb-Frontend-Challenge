@@ -47,7 +47,6 @@ export default function Hero() {
               href="mailto:glbzbayram@gmail.com"
               target="_blank"
               exact
-              onClick={scrollToBottom}
               className="animate-pulse duration-700 hover-dark-white-btn hover-dark-btn hidden md:inline-block bg-[#3730A3] text-[#FFFFFF] dark:text-[#3730A3] dark:bg-[#E1E1FF] text-lg font-medium md:py-3 py-2 px-6 md:px-8  rounded-md h-12"
             >
               Hire me
