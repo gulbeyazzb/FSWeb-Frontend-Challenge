@@ -35,7 +35,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className=" dark:text-[#AEBCCF] text-[#1F2937] md:font-bold md:text-7xl text-xl font-bold md:pb-6 "
+            className=" dark:text-[#AEBCCF] dark:hover:text-[#777dba] text-[#1F2937] duration-500 hover:text-[#5e5b8d] md:font-bold md:text-7xl text-xl font-bold md:pb-6 "
           >
             {HeroData.aboutHeader}
           </motion.div>

@@ -15,7 +15,7 @@ const Skills = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="flex gap-4 items-center"
+            className="flex gap-4 items-center ease-in-out duration-500 hover:translate-y-1 hover:scale-100"
           >
             {skill}
           </motion.div>
